@@ -38,7 +38,7 @@
  }
 
  .cardContainer li:hover{
-  padding: 3%;
+  transform: scale(1.2);
   background-color: plum;
   box-shadow: 4px 7px;
  }
@@ -78,14 +78,16 @@
 
 
 #navigation li{
-  display: inline;
+  display: inline-block;
   margin: 2em;
 }
 
 a{
+  display: inline-block;
   text-decoration: none;
   color: black;
   border: solid;
+  background-color: aqua;
   padding: 0.5em;
   border-radius: 5px;
   box-shadow: 5px 10px gray;
@@ -94,7 +96,7 @@ a{
 a:hover{
   text-decoration: underline;
   box-shadow: 2.5px 5px gray;
-  padding: 0.25em;
+  transform: scale(0.8);
 }
 
 .heroImage{
@@ -123,13 +125,18 @@ button{
 }
 
 #header {
+  background-color: purple;
+  height: 100px;
   position: sticky;
   top: 0;
-  margin: 5px;
-  padding: 5px;
+  z-index: 1;
 }
 
 #header li {
   display: inline;
   margin: .2%;
 }
+
+/* #header.is-pinned {
+  background-color: red;
+} */
