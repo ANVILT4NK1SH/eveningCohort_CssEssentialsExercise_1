@@ -74,7 +74,7 @@
     <div>5</div>
   </div>
 <!-- Sticky Header -->
-  <nav id="header">
+  <div id="header">
     <ul>
       <li>
         <a href="">Home</a>
@@ -86,7 +86,7 @@
         <a href="">Hobbies</a>
       </li>
     </ul>
-  </nav>
+  </div>
 <!-- Centered heading -->
   <div id="centered">
     <h1 id="divCenter">hi</h1>
@@ -112,5 +112,19 @@
       <a href="">Hobbies</a>
     </li>
   </ul>
+  <!-- <script>
+    setInterval(changeHeader, 2);
+    
+    const target = document.getElementsById("header").offsetTop
+
+      function changeHeader() {
+        const point = document.getElementsById("header").offsetTop
+
+        if (target === point) {
+          header.style.backgroundColor = "red";
+        }
+      }
+
+  </script> -->
 </body>
 </html>
