@@ -75,48 +75,29 @@
   </div>
 <!-- Sticky Header -->
   <div id="header">
-  <div id="header">
     <ul>
       <li>
-        <a href="">Home</a>
+        <a class="nav" href="">Home</a>
       </li>
       <li>
-        <a href="">Contact</a>
+        <a class="nav" id="contact" href="#dim">Contact</a>
       </li>
       <li>
-        <a href="">Hobbies</a>
+        <a class="nav" href="">Hobbies</a>
       </li>
     </ul>
   </div>
   
 <!-- Dropdown Menu -->
- <div>
-  <ul>
-    <li>
-      Favorite game genre:
-    </li>
-    <ul>
-      <li>
-        FPS
-      </li>
-      <li>
-        Top Down Shooter
-      </li>
-      <li>
-        
-      </li>
-    </ul>
-  </ul>
+ <div class="dropdown">
+  <button class="dropbtn">Favorte game genre</button>
+  <div class="dropdownContent">
+    <a href="">FPS</a>
+    <a href="">RPG</a>
+    <a href="">Survival</a>
+    <a href="">Strategy</a>
+  </div>
  </div>
-  <label for="gameSelect">Favorite Game Genre:</label>
-
-  <select name="genre" id="gameSelect">
-    <option value="">--Please choose an option--</option>
-    <option value="fps">FPS</option>
-    <option value="strategy">Strategy</option>
-    <option value="topDownShooter">Top Down Shooter</option>
-    <option value="survival">Survival</option>
-  </select>
 
 <!-- Centered heading -->
   <div id="centered">
@@ -124,7 +105,7 @@
   </div>
 <!-- Hero Image section with centered button -->
   <section class="heroImage">
-    <button>
+    <button class="centeredBtn">
       Hello
     </button>   
   </section>
@@ -132,17 +113,45 @@
   <div id="div2">2</div>
   <div id="div3">3</div>
 <!-- Navigation buttons (currently unlinked) -->
-  <ul id="navigation">
+  <ul id="footer">
     <li>
-      <a href="">Home</a>
+      <a class="nav" href="">Home</a>
     </li>
     <li>
-      <a href="">Contact</a>
+      <a class="nav" id="contact" href="">Contact</a>
     </li>
     <li>
-      <a href="">Hobbies</a>
+      <a class="nav" href="">Hobbies</a>
     </li>
   </ul>
+<!-- Modal Window -->
+  <div id="dim" class="dim">
+    <div id= "modal" class="modal">
+      <a href="#" class="close">X</a>
+      <h1>Contact</h1>
+      <form action="">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+        <input type="button" value="Submit">
+      </form>
+    </div>
+  </div>
+  <!-- <dialog id="modal">
+    <h1>Contact</h1>
+    <form action="">
+      <label for="firstName">First Name:</label><br>
+      <input type="text" id="firstName" name="firstName"><br>
+      <label for="lastName">Last Name:</label><br>
+      <input type="text" id="lastName" name="lastName"><br>
+      <label for="email" >Email:</label><br>
+      <input type="email" name="email" id="email"><br>
+      <input type="button" value="Submit">
+    </form>
+  </dialog> -->
   <!-- <script>
     setInterval(changeHeader, 2);
     
